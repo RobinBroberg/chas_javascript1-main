@@ -13,7 +13,7 @@
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
   const myName = () => {
     return console.log("Robin Broberg");
-  }
+  };
   myName();
   myName();
 
@@ -23,9 +23,9 @@
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
 
-  function printGreeting(name) {
+  const printGreeting = (name) => {
     return console.log("Hello " + name);
-  }
+  };
   printGreeting("Bob");
   printGreeting("Sue");
 
@@ -38,9 +38,9 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
-  function multiply(firstNum, secondNum) {
+  const multiply = (firstNum, secondNum) => {
     return firstNum * secondNum;
-  }
+  };
 
   const first = multiply(2, 2);
   console.log(first);
@@ -51,13 +51,13 @@
   // `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
   // function. It should print "Go for a run!"
   //
-  function warmEnough(temp) {
+  const warmEnough = (temp) => {
     if (temp > 10) {
       return true;
     } else {
       return false;
     }
-  }
+  };
 
   if (warmEnough(15)) {
     console.log("Go for a run!");
