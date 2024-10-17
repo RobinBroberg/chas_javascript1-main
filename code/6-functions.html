@@ -52,11 +52,7 @@
   // function. It should print "Go for a run!"
   //
   const warmEnough = (temp) => {
-    if (temp > 10) {
-      return true;
-    } else {
-      return false;
-    }
+    return temp > 10;
   };
 
   if (warmEnough(15)) {
